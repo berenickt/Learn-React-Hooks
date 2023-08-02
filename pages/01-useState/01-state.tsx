@@ -4,7 +4,7 @@ export default function UseStatePage() {
   // **** state 에는 형재 샅태 값이 들어있고,
   // setState 함수로 state값을 변경시킬 수 있다.
   // setState로 state를 변경할 떄마다, 컴포넌트는 리렌더링된다.
-  const [time, settime] = useState(1)
+  const [time, setTime] = useState(1)
 
   const onClickUpdate = () => {
     let newTime
@@ -13,14 +13,14 @@ export default function UseStatePage() {
     } else {
       newTime = time + 1
     }
-    settime(newTime)
+    setTime(newTime)
   }
 
   console.log('업데이트!')
 
   return (
     <>
-      <h1>useState</h1>
+      <h1>useState-01</h1>
       <span>현재 시간 : {time}시</span>
       <br />
       <button onClick={onClickUpdate}>업데이트</button>

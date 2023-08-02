@@ -13,7 +13,7 @@ export default function UseStateInputPage() {
   })
   const [input, setInput] = useState('')
 
-  const onChageInput = (e: any) => {
+  const onChangeInput = (e: any) => {
     setInput(e.target.value)
   }
 
@@ -29,7 +29,8 @@ export default function UseStateInputPage() {
 
   return (
     <>
-      <input type="text" value={input} onChange={onChageInput} />
+      <h1>useState-02</h1>
+      <input type="text" value={input} onChange={onChangeInput} />
       <button onClick={onClickUpload}>업로드</button>
       {names.map((name, idx) => (
         <p key={idx}>{name}</p>
