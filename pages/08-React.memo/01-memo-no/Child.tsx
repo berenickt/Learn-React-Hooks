@@ -1,4 +1,4 @@
-export default function Child({ name, age }: any) {
+export default function Child1({ name, age }: any) {
   console.log('👶자녀  컴포넌트가 렌더링이 되었어요.')
 
   return (

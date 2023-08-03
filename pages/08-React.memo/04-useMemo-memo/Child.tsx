@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-function Child({ name }: any) {
+function Child4({ name }: any) {
   console.log('👶자녀  컴포넌트가 렌더링이 되었어요.')
 
   return (
@@ -12,4 +12,4 @@ function Child({ name }: any) {
   )
 }
 
-export default memo(Child)
+export default memo(Child4)

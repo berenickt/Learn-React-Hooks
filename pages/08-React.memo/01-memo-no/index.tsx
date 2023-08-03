@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Child from './Child'
+import Child1 from './Child'
 
 /*** 📌 React.memo
  * React에서는 부모컴포넌트가 렌더링되면, 모든 자식 컴포넌트들도 렌더링됩니다.
@@ -39,7 +39,7 @@ export default function MemoNonePage() {
       <p>age: {parentAge}</p>
       <button onClick={incrementParentAge}>부모 나이 증가</button>
       <button onClick={incrementChildAge}>자녀 나이 증가</button>
-      <Child name={'홍길동'} age={childAge} />
+      <Child1 name={'홍길동'} age={childAge} />
     </div>
   )
 }

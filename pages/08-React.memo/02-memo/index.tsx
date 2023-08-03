@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Child from './Child'
+import Child2 from './Child'
 
 export default function MemoPage() {
   const [parentAge, setParentAge] = useState(0)
@@ -16,7 +16,7 @@ export default function MemoPage() {
       <p>age: {parentAge}</p>
       <button onClick={incrementParentAge}>부모 나이 증가</button>
       <button onClick={incrementChildAge}>자녀 나이 증가</button>
-      <Child name={'홍길동'} age={childAge} />
+      <Child2 name={'홍길동'} age={childAge} />
     </div>
   )
 }

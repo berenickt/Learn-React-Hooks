@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-function Child({ name, age }: any) {
+function Child2({ name, age }: any) {
   console.log('👶자녀  컴포넌트가 렌더링이 되었어요.')
 
   return (
@@ -19,4 +19,4 @@ function Child({ name, age }: any) {
  *
  * 컴포넌트를 인자로 받아, props체크하는 최적화된 컴포넌트를 반환합니다.
  */
-export default memo(Child)
+export default memo(Child2)
